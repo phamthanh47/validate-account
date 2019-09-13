@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateAccount(str) {
+        let patt= /^[_a-z0-9]{6,}$/;
+        let result= patt.test(str);
+          if(result){
+              alert("chuoi hop le");
+          }
+          else
+              alert("chuoi khong hop le!");
+    }
+    let str1= "123abc_"; validateAccount(str1);
+    let str2="_abc123";validateAccount(str2);
+    let str3="abcdefg";validateAccount(str3);
+    let str4 ="12345";validateAccount(str4);
+    let str5 = "12345";validateAccount(str5);
+    let str6 ="abcde ";validateAccount(str6);
+</script>
+</body>
+</html>
